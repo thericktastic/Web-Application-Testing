@@ -28,13 +28,13 @@ const Dashboard = (props) => {
 
     return (
         <div>
-        <input onClick={() => props.setStrikes(strikeLogic)} type="submit" value="Strike" />
-        <input onClick={() => props.setBalls(ballLogic)} type="submit" value="Ball" />
+        <input onClick={() => props.setStrikes(strikeLogic)} type="submit" value="Strike"/>
+        <input onClick={() => props.setBalls(ballLogic)} type="submit" value="Ball"/>
         <input onClick={() => {props.setStrikes(foulLogic())
-        }} type="submit" value="Foul" />
+        }} type="submit" value="Foul"/>
         <input onClick={() => {
             props.setStrikes(0) 
-            props.setBalls(0)}} type="submit" value="Hit" />
+            props.setBalls(0)}} type="submit" value="Hit"/>
         </div>
     )
 }
